@@ -1,0 +1,455 @@
+2013-06-16 17:17:25+0200 [spiRss] INFO: Spider opened
+2013-06-16 17:17:25+0200 [spiRss] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2013-06-16 17:17:25+0200 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6025
+2013-06-16 17:17:25+0200 [scrapy] DEBUG: Web service listening on 0.0.0.0:6082
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Crawled (200) <GET http://www.elperiodico.com/es/rss/rss_portada.xml> (referer: None)
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/3/1370260021733.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La periodista plasma en un libro sus dos a\xc3\xb1os de conversaciones con Francisco, entonces cardenal de Buenos Aires<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/2/1371317456822.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/3/1371369976238.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La fiscal\xc3\xada considera que planific\xc3\xb3 el asesinato de Ruth y Jos\xc3\xa9<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/3/1371370238939.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El \'land\' alem\xc3\xa1n basa su potencia en la formaci\xc3\xb3n, la innovaci\xc3\xb3n y la planificaci\xc3\xb3n<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/9/1371368209193.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La falta de empleo y de vivienda asequible es un pesado lastre que les impide lograr autonom\xc3\xada<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371368372492.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ["'M\xc3\xa1s Peri\xc3\xb3dico' viaja a esta regi\xc3\xb3n de leyenda de Francia que ha sabido convertir sus contrastes en riqueza"]}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['RAMON COMORERA / BarcelonaLos nuevos Encants abren el debate en Barcelona del coste de los edificios planteados como iconos<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/0/1371364944507.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['MAR\xc3\x8dA JES\xc3\x9aS IB\xc3\x81\xc3\x91EZ / INMA SANTOS HERRERA / BarcelonaSiete estudiantes citados por EL PERI\xc3\x93DICO debaten sobre su experiencia y sus planes de futuro']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371380131092.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Algunos ministros piden al presidente del Gobierno un gesto ante el rechazo de Mas al unilateralismo<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/5/5/1371365729455.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El \xc3\xaddolo de Granollers derrota a Rabat con una carrera plet\xc3\xb3rica en Moto2<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371382979692.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El \'exconseller\' de Economia califica de "prop\xc3\xb3sito agotado" el objetivo de transformar a Espa\xc3\xb1a en un Estado federal<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371381796692.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El gel de esta planta se aplica despu\xc3\xa9s de tomar el sol, ya que hidrata y calma<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/5/1371374821357.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La oferta es un 10,2% m\xc3\xa1s barata que la temporada pasada<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/7/1371225409770.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Otras tres compa\xc3\xb1eras de clase del menor en un instituto de Salt tuvieron que ser trasladadas al hospital']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/6/1371235464960.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Guillermina Baeza y su hija Bel\xc3\xa9n Larruy son el alma de una firma de ba\xc3\xb1adores que recrea el mundo de las \'pin ups\'<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/5/1371230752150.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['EL PERI\xc3\x93DICO ofrece un descuento de 2x1 para ver la hilarante versi\xc3\xb3n de la obra de Zorrilla interpretada por Joan Pera y Lloll Bertran<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/1/4/1371230619941.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La polic\xc3\xada reprime con inusual violencia las protestas contra el incremento de las tarifas y detiene a m\xc3\xa1s de 200 personas<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/5/0/1371225229305.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Anticorrupci\xc3\xb3n apunta a un "acuerdo criminal" entre la constructora y el partido con Millet como intermediario']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los resultados de las pruebas de sexto de primaria muestran una bajada importante en el nivel de catal\xc3\xa1n<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/1/1371229842719.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['"Se trata de que las autonom\xc3\xadas se incorporen a la representaci\xc3\xb3n del Estado", dice el ministro Garc\xc3\xada-Margallo<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/5/1371216088958.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Anticorrupci\xc3\xb3n apunta a un "acuerdo criminal" entre constructora y partido con Millet como intermediario']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ["El director de 'Slumdog millionaire' estrena 'Trance', complicada historia del robo de un cuadro de Goya"]}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Una decena de dise\xc3\xb1adores africanos presentan su ropa en el Palau Robert<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/9/1371190543998.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['"Agradec\xc3\xad poder rodar \'Trance\' mientras hac\xc3\xada la ceremonia de los Juegos. Todo era muy burocr\xc3\xa1tico", dice el cineasta<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/5/1371191027452.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los jueces le consideran responsable del env\xc3\xado ilegal de 6.000 toneladas de armas a Ecuador y Croacia en los 90<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/3/1371187882030.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El exitoso \'dj\' estadounidense agitar\xc3\xa1 hoy el S\xc3\xb3nar<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/6/5/1371188247056.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El espionaje norteamericano corrobora el uso "a peque\xc3\xb1a escala" pero en "m\xc3\xbaltiples ocasiones"']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El fotomontaje compara al presidente de China con el personaje de dibujos<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/2/1371145593529.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Es miembro de un grupo de defensa de los padres en conflictos matrimoniales<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/4/2/1371148108524.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El acceso a Col\xc3\xb3n, la inauguraci\xc3\xb3n de la sede de Desigual y los estrenos de cine, otros temas']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Las soldados aparecen en el clip bailando semidesnudas y usando sus armas como una barra americana']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El accidente ha tenido lugar en la misma l\xc3\xadnea donde el a\xc3\xb1lo pasado se produjo la peor tragedia ferroviaria de Argentina']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El primer ministro turco exige a los j\xc3\xb3venes que abandonen el parque Gezi tras alertar de que se le acab\xc3\xb3 la paciencia']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Las im\xc3\xa1genes muestran frascos de pastillas y fotos de beb\xc3\xa9s<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/6/4/1371124463046.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Pide la apertura de una investigaci\xc3\xb3n sobre los supuestos abusos policiales cometidos contra el periodista']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Supera los goles de Maradona con Argentina tras golear en Guatemala (0-4)<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/1/4/1371317186441.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El once espa\xc3\xb1ol golea a Noruega (3-0) y se batir\xc3\xa1 ahora con Italia<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/8/1371318809083.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['La cifra supone un aumento del 24% respecto a la edici\xc3\xb3n del 2012<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/6/1371319289967.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['En un acto en Biarritz, miles de personas reclaman ena Espa\xc3\xb1a y Francia que dialoguen con la banda<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/9/1371329637699.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El Liceo conquista su s\xc3\xa9ptimo t\xc3\xadtulo al derrotar in extremis al Lleida (3-4)<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/8/1371326923088.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/1/1371331387619.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El nuevo fichaje azulgrana encarrila el triunfo de Brasil ante Jap\xc3\xb3n (3-0)<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/7/1371328966777.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Malena Costa, Noelia L\xc3\xb3pez, Miguel \xc3\x81ngel Silvestre y Nicole Richie exhiben en Instagram sus mejores momentos<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/5/1/1371233601215.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El descenso del equipo del que surgi\xc3\xb3 Ag\xc3\xbcero vuelve a poner en escena el estado calamitoso del f\xc3\xbatbol argentino<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/6/1371380860363.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los antidisturbios tratan de impedir que lleguen a la plaza de Taksim, tomada por los agentes<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/6/1371393517560.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El \'conseller\' reitera el compromiso de UDC con el programa de CiU, el pacto con ERC y la celebraci\xc3\xb3n de la consulta<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/5/1371391200457.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/2/1371372907928.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/0/1371372727700.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Pet Shop Boys demostraron que est\xc3\xa1n creativamente vivos con una fusi\xc3\xb3n de \xc3\xa9xitos, rescates y piezas recientes<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/9/1371374559599.jpg"/>']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El diario lanza el 23 de junio la primera entrega de la Vinoteca, apadrinada por Nandu Jubany']}
+2013-06-16 17:17:25+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El Gobierno decidir\xc3\xa1 el viernes si absuelve a Mar\xc3\xada del Carmen Garc\xc3\xada, condenada en el 2009 a nueve a\xc3\xb1os de c\xc3\xa1rcel<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/3/1371375917530.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los antidisturbios incumplen los plazos dados por Erdogan y cargan con gases y ca\xc3\xb1ones de agua contra los manifestantes<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/0/4/1371335431140.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El pastor alem\xc3\xa1n de la Guardia Civil condecorado por el Reino Unido por su valent\xc3\xada acaba de jubilarse<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/4/1371377216449.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los expertos dicen que la causa de aquella recesi\xc3\xb3n fue, como ahora, que se dedic\xc3\xb3 el dinero a especular y no a crear industria<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/6/1371377327169.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El piloto mallorqu\xc3\xadn supera en las dos \xc3\xbaltimas vueltas a Rins y Vi\xc3\xb1ales<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/7/1371381024377.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los sindicatos ven la reforma de las pensiones como la "\xc3\xbaltima gota" en la sucesi\xc3\xb3n de recortes<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/9/1371384051298.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ["Un gol de 'crack' de la delantera rubrica la victoria del equipo azulgrana contra el Zaragoza en la final de la Copa (4-0)"]}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Miles de personas salen a las calles en toda Espa\xc3\xb1a para pedir una Europa "m\xc3\xa1s social y democr\xc3\xa1tica"<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/6/1371386328463.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Supera con autoridad y perseverancia a Pedrosa y M\xc3\xa1rquez en Montmel\xc3\xb3<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/3/1371392164432.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['LA PAH, que ha celebrado una asamblea en Valencia, no descarta recuperar en el futuro esta forma de protesta<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/4/9/1371315458694.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El dirigente moderado ha obtenido m\xc3\xa1s del 50% de los votos y no necesitar\xc3\xa1 una segunda vuelta electoral<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/9/1371313238093.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Un test antidopaje detecta un diur\xc3\xa9tico en la orina de la atleta jamaicana, campeona mundial de 200 metros<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/7/1371309462978.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Han colgado un cartel en el lugar en que muri\xc3\xb3 Ahmad Ozman con mensajes en castellano y catal\xc3\xa1n<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/9/4/1371311774249.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Una s\xc3\xb3lida defensa y un acertado \xc3\x81lex dan el triunfo al equipo de Murcia, donde este domingo se disputa el tercer partido<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/7/1371311326272.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/1/1/1371310333211.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El informador denunciar\xc3\xa1 por malos tratos a la polic\xc3\xada auton\xc3\xb3mica, que le acusa de "atentado a la autoridad"']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['"No nos da miedo ir al juicio, que esperemos que se haga cuanto antes mejor", manifiesta el \'president\'']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Ambas compa\xc3\xb1\xc3\xadas precisan que las peticiones de informaci\xc3\xb3n afectaban a unas 50.000 cuentas<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/5/1371291699053.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ["Ella acompa\xc3\xb1\xc3\xb3 a Gwyneth Paltrow por Espa\xc3\xb1a. \xc3\x89l fue chico Almod\xc3\xb3var. Ambos comparten mantel en 'Men\xc3\xba degustaci\xc3\xb3n'"]}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Barcelona acoge la primera prueba de la Liga San Miguel de traineras, la gran competici\xc3\xb3n del remo<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/4/9/1371230187794.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Padres de un colegio del barrio refundan el hist\xc3\xb3rico club de f\xc3\xbatbol de la f\xc3\xa1brica textil']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['"Yo me los llevar\xc3\xada a casa, los sentar\xc3\xada en el sof\xc3\xa1 del comedor y les tratar\xc3\xada como a reyes"<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/1/1/1371278916311.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Un maniqu\xc3\xad ocupaba el veh\xc3\xadculo, que por ahora se dirige con mando a distancia']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['\'Saber y ganar\' rinde hoy homenaje en La 2 al polifac\xc3\xa9tico comunicador<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/6/1371204770163.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El presidente de RTVE se suma a la petici\xc3\xb3n masiva, que coordina la Uni\xc3\xb3n Europea de Radiotelevisi\xc3\xb3n<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371202249192.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El Liverpool paga 9 millones por el punta, que se une a Navas (City) y Llorente (Juventus) en la lista de exiliados ilustres<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/8/6/1371202275468.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/2/9/1371199861492.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Los exentrenadores del Bar\xc3\xa7a compartieron mesa en un reservado<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/5/9/1371199708595.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['\'Pesadilla en la cocina\' repunta, tanto en Catalunya como en toda Espa\xc3\xb1a<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/3/7/1371196652173.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['Una consejera de la Liga Norte desata la pol\xc3\xa9mica en Italia con un comentario racista contra la ministra de Integraci\xc3\xb3n<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/7/3/1371198383537.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El d\xc3\xbao adelant\xc3\xb3 canciones del disco \'Electric\' y revivi\xc3\xb3 \xc3\xa9xitos de los 80 y 90<br /><img alt="" src="http://estaticos.elperiodico.com/resources/jpg/5/5/1371192324255.jpg"/>']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ['El Ejecutivo catal\xc3\xa1n pone en marcha el dispositivo para calcular lo que le corresponde por el impuesto sobre las cuentas ']}
+2013-06-16 17:17:26+0200 [spiRss] DEBUG: Scraped from <200 http://www.elperiodico.com/es/rss/rss_portada.xml>
+	{'descChan': 'http://www.elperiodico.com/es/',
+	 'linkChan': 'RSS - Noticias de Portada',
+	 'titChan': 'Portada - elPeri\xc3\xb3dico.com',
+	 'titItem': ["El humorista regresa a la edici\xc3\xb3n digital de EL PERI\xc3\x93DICO con sus hilarantes 'TituLatres'"]}
+2013-06-16 17:17:26+0200 [spiRss] INFO: Closing spider (finished)
+2013-06-16 17:17:26+0200 [spiRss] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 247,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 65650,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2013, 6, 16, 15, 17, 26, 131665),
+	 'item_scraped_count': 86,
+	 'log_count/DEBUG': 93,
+	 'log_count/INFO': 4,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2013, 6, 16, 15, 17, 25, 385379)}
+2013-06-16 17:17:26+0200 [spiRss] INFO: Spider closed (finished)
