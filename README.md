@@ -7,15 +7,11 @@ Arbol del proyecto
 
 proyecto_final
 ├──Mysql : contiene script para generar la base de datos
-├──rssReader : directorio raiz del proyecto scrapy
-│    ├── rssReader
-│    │     ├── __init__.py
-│    │     ├── items.py # Fichero donde definir los Items del proyecto.
-│    │     ├── pipelines.py # Fichero donde definir los Items Pipelines del proyecto.
-│    │     ├── settings.py # Fichero de ajustes del proyecto
-│    │     └── spiders # Directorio donde almacenar los ficheros que definen los Spiders.
-│    │            └── __init__.py
-│    └──  scrapy.cfg # Fichero de configuración del proyecto.  
+├rssReader : directorio raiz del proyecto scrapy
+│└rssReader
+│  └── spiders # Directorio donde almacenar los Spiders.
+│      
+│    
 
 
 
