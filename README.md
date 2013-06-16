@@ -6,10 +6,10 @@ Entrega del Proyecto Final del Curso Programación Avanzada en Python, 2ª edici
 Arbol del proyecto
 
 proyecto_final
-	Mysql : contiene script para generar la base de datos
-	rssReader : directorio raiz del proyecto scrapy
-		rssReader
-			spiders # Directorio donde almacenar los Spiders.
+---Mysql : contiene script para generar la base de datos
+---rssReader : directorio raiz del proyecto scrapy
+-----rssReader
+---------spiders # Directorio donde almacenar los Spiders.
 
 
 1) Abrir el Web Browser desde python

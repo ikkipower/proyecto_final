@@ -14,7 +14,7 @@ class RssSpider(BaseSpider):
         log.log.defaultObserver = log.log.DefaultObserver()
         log.log.defaultObserver.start()
         log.started = False
-        log.start(LOG_FILE, loglevel=log.DEBUG,logstdout=True)
+        log.start(LOG_FILE, loglevel=log.ERROR,logstdout=False)
         super(RssSpider, self).__init__(name, **kwargs)
 
     
@@ -24,9 +24,9 @@ class RssSpider(BaseSpider):
         iinfo = xxs.select("//channel/item")
         items = []
         
-        tituloRss = cinfo.select("title/text()").extract()[0].encode('utf-8')
-        linkRss = cinfo.select("link/text()").extract()[0].encode('utf-8')
-        DescRss = cinfo.select("description/text()").extract()[0].encode('utf-8')
+        tituloRss = cinfo.select("title/text()").extract()[0]
+        linkRss = cinfo.select("link/text()").extract()[0]
+        DescRss = cinfo.select("description/text()").extract()[0]
         
         for site in iinfo:
 			
@@ -40,30 +40,33 @@ class RssSpider(BaseSpider):
             aux=[]
             it = site.select("title/text()").extract()
             if len(it) == 1:
-				aux.append(it[0].encode('utf-8'))		
+				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))		
             elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i].encode('utf-8'))
+					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
+            print "**********************tititem*************"
+            print aux[0]
+            print "******************************************"
             item['titItem'] = aux              
-
+       
             ################################################
             aux=[]
             it = site.select("description/text()").extract()
             if len(it) == 1:
-				aux.append(it[0].encode('utf-8'))		
+				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))				
             elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i].encode('utf-8'))
+					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
             item['descItem'] = aux              
 
             ################################################
             aux=[]
-            it = site.select("description/text()").extract()
+            it = site.select("link/text()").extract()
             if len(it) == 1:
-				aux.append(it[0].encode('utf-8'))		
+				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))				
             elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i].encode('utf-8'))
+					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
             item['linkItem'] = aux                          
             
             items.append(item)

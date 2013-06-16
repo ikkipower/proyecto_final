@@ -1,8 +1,8 @@
 -- Borra la base de datos si existe
 DROP DATABASE IF EXISTS RSSdata;
 
--- Crea la base de datos
-CREATE DATABASE RSSdata;
+-- Crea la base de datos CHARACTER SET utf8 COLLATE utf8_bin;
+CREATE DATABASE RSSdata CHARACTER SET utf8 COLLATE utf8_bin;
 
 -- Usuario para la conexión
 GRANT ALL ON RSSdata.* TO 'rssuser'@'localhost' IDENTIFIED BY 'rss';
