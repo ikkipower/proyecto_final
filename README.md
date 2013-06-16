@@ -6,13 +6,10 @@ Entrega del Proyecto Final del Curso Programación Avanzada en Python, 2ª edici
 Arbol del proyecto
 
 proyecto_final
-├──Mysql : contiene script para generar la base de datos
-├rssReader : directorio raiz del proyecto scrapy
-│└rssReader
-│  └── spiders # Directorio donde almacenar los Spiders.
-│      
-│    
-
+	Mysql : contiene script para generar la base de datos
+	rssReader : directorio raiz del proyecto scrapy
+		rssReader
+			spiders # Directorio donde almacenar los Spiders.
 
 
 1) Abrir el Web Browser desde python
@@ -41,6 +38,26 @@ tenemos 3 elementos obligatorios que son los siguientes:
 3) Generación Base de Datos Mysql (dentro de la carpeta Mysql fichero 
 database.sql)
 
+Base de datos que contendrá una tabla donde se guarde por cada entrada
+del feed rss los 3 datos genéricos a todos y los específicos de cada
+entrada.
+
+-- Borra la base de datos si existe
+DROP DATABASE IF EXISTS RSSdata;
+
+-- Crea la base de datos
+CREATE DATABASE RSSdata;
+
+-- Usuario para la conexión
+GRANT ALL ON RSSdata.* TO 'rssuser'@'localhost' IDENTIFIED BY 'rss';
+
+-- Creación de la tabla
+USE RSSdata;
+CREATE TABLE entrada (id INT NOT NULL AUTO_INCREMENT,
+                      TitRss VARCHAR(200), DescRss VARCHAR(200),
+                      LinkRss VARCHAR(200), TitItem VARCHAR(200), 
+                      DescItem VARCHAR(200), LinkItem VARCHAR(200), 
+                      PRIMARY KEY (id));
 
 4) Pipeline para guardar los datos seleccionados en un base de Datos Myql
 

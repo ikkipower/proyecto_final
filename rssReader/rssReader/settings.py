@@ -10,6 +10,6 @@ BOT_NAME = 'rssReader'
 
 SPIDER_MODULES = ['rssReader.spiders']
 NEWSPIDER_MODULE = 'rssReader.spiders'
-
+ITEM_PIPELINES = ['rssReader.pipelines.JsonWriterPipeline']
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'rssReader (+http://www.yourdomain.com)'
