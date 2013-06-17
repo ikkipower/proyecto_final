@@ -50,14 +50,14 @@ class MySqlPipeline(object):
 
     def process_item(self, item, spider):
         print "******************************** process ************************"
-        print(type(item['titItem'][0]))
-        print item['titItem'][0]
-        print(type(item['descItem'][0]))
-        print item['descItem'][0]
-        print(type(item['linkItem'][0]))
-        print item['linkItem'][0]
+        print(type(item['titChan'][0]))
+        print item['titChan'][0]
+        print(type(item['descChan'][0]))
+        print item['descChan'][0]
+        print(type(item['linkChan'][0]))
+        print item['linkChan'][0]
         print "******************************** insdata ************************"
-        self.dbobj.insData("ddd","jjj","http://www.marca.com",item['titItem'][0],item['descItem'][0],"ss")
+        self.dbobj.insData(item['titChan'][0].replace("\"","\\\""),item['descChan'][0].replace("\"","\\\""),item['linkChan'][0].replace("\"","\\\""),item['titItem'][0].replace("\"","\\\""),item['descItem'][0].replace("\"","\\\""),item['linkItem'][0].replace("\"","\\\""))
         #if len(item['tag'])>0:
 			#self.exporter.export_item(item)
         return item

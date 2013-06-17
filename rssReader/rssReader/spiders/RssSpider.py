@@ -24,9 +24,9 @@ class RssSpider(BaseSpider):
         iinfo = xxs.select("//channel/item")
         items = []
         
-        tituloRss = cinfo.select("title/text()").extract()[0]
-        linkRss = cinfo.select("link/text()").extract()[0]
-        DescRss = cinfo.select("description/text()").extract()[0]
+        tituloRss = cinfo.select("title/text()").extract()
+        linkRss = cinfo.select("link/text()").extract()
+        DescRss = cinfo.select("description/text()").extract()
         
         for site in iinfo:
 			
@@ -40,10 +40,10 @@ class RssSpider(BaseSpider):
             aux=[]
             it = site.select("title/text()").extract()
             if len(it) == 1:
-				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))		
+				aux.append(it[0])		
             elif len(it) > 1:
 				for aut in it:
-					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
+					aux.append(aut[i])		
             print "**********************tititem*************"
             print aux[0]
             print "******************************************"
@@ -53,20 +53,20 @@ class RssSpider(BaseSpider):
             aux=[]
             it = site.select("description/text()").extract()
             if len(it) == 1:
-				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))				
+				aux.append(it[0])		
             elif len(it) > 1:
 				for aut in it:
-					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
+					aux.append(aut[i])	
             item['descItem'] = aux              
 
             ################################################
             aux=[]
             it = site.select("link/text()").extract()
             if len(it) == 1:
-				aux.append(str(it[0].encode('utf8')).replace("\"","\\\""))				
+				aux.append(it[0])		
             elif len(it) > 1:
 				for aut in it:
-					aux.append(str(aut[i].encode('utf8')).replace("\"","\\\""))		
+					aux.append(aut[i])		
             item['linkItem'] = aux                          
             
             items.append(item)
