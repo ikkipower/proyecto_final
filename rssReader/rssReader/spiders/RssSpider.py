@@ -24,50 +24,68 @@ class RssSpider(BaseSpider):
         iinfo = xxs.select("//channel/item")
         items = []
         
-        tituloRss = cinfo.select("title/text()").extract()
-        linkRss = cinfo.select("link/text()").extract()
-        DescRss = cinfo.select("description/text()").extract()
-        
+        it = cinfo.select("title/text()").extract()[0].encode('latin-1')
+        print len(it)
+        if len(it) == 0:
+			tituloRss = [""]
+        else:
+			tituloRss = [it]
+
+        it = cinfo.select("link/text()").extract()[0].encode('latin-1')
+        if len(it) == 0:
+			linkRss = [""]
+        else:
+			linkRss = [it]
+
+        it = cinfo.select("description/text()").extract()[0].encode('latin-1')
+        if len(it) == 0:
+			DescRss = [""]
+        else:
+			DescRss = [it]
+
         for site in iinfo:
-			
-            aux=[]
-            item = RssItem()
-            item['titChan'] = tituloRss
-            item['descChan'] = linkRss
-            item['linkChan'] = DescRss
+			aux=[]
+			item = RssItem()
+			item['titChan'] = tituloRss
+			item['descChan'] = linkRss
+			item['linkChan'] = DescRss
             
             ################################################
-            aux=[]
-            it = site.select("title/text()").extract()
-            if len(it) == 1:
-				aux.append(it[0])		
-            elif len(it) > 1:
+			aux=[]
+			it = site.select("title/text()").extract()
+			if len(it) == 1:
+				aux.append(it[0].encode('latin-1'))
+			elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i])		
-            print "**********************tititem*************"
-            print aux[0]
-            print "******************************************"
-            item['titItem'] = aux              
-       
+					aux.append(aut[i].encode('latin-1'))
+			else:
+				aux.append("".encode('latin-1'))		
+			item['titItem'] = aux              
+      
             ################################################
-            aux=[]
-            it = site.select("description/text()").extract()
-            if len(it) == 1:
-				aux.append(it[0])		
-            elif len(it) > 1:
+			aux=[]
+			it = site.select("description/text()").extract()
+			if len(it) == 1:
+				aux.append(it[0].encode('latin-1'))
+			elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i])	
-            item['descItem'] = aux              
+					aux.append(aut[i].encode('latin-1'))	
+			else:
+				aux.append("".encode('latin-1'))				
+			item['descItem'] = aux              
 
             ################################################
-            aux=[]
-            it = site.select("link/text()").extract()
-            if len(it) == 1:
-				aux.append(it[0])		
-            elif len(it) > 1:
+			aux=[]
+			it = site.select("link/text()").extract()
+			if len(it) == 1:
+				aux.append(it[0].encode('latin-1'))		
+			elif len(it) > 1:
 				for aut in it:
-					aux.append(aut[i])		
-            item['linkItem'] = aux                          
+					aux.append(aut[i].encode('latin-1'))
+			else:
+				aux.append("".encode('latin-1'))							
+			
+			item['linkItem'] = aux                          
             
-            items.append(item)
+			items.append(item)
         return items

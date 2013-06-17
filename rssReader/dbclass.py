@@ -74,7 +74,11 @@ class Dbclass:
          self.micursor.execute(query)
          self.mycon.commit()      
          registro = self.micursor.fetchall()      
-         return registro
+         
+         aux = []
+         for p in registro:
+			 aux.append(p['TitItem'])
+         return aux
       
       def disconnect(self):
          self.micursor.close()

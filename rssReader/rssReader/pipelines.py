@@ -27,7 +27,12 @@ class MySqlPipeline(object):
 
     def __init__(self):
          self.dbobj = Dbclass('RSSdata','rssuser','rss')
-         self.i=0 #se ha de borrar
+         self.dbobj.connect()
+         #como el init solamente se llama una vez obtenemos el dato
+         #para evitar repetir la operacion cada vez que insertemos
+         #un item nuevo
+        
+         self.listTitItem = self.dbobj.showTituloItem()
          
 
     @classmethod
@@ -39,13 +44,12 @@ class MySqlPipeline(object):
          return pipeline
 
     def spider_opened(self, spider):
-        print "****************************** opened *********************************"
-        self.dbobj.connect()
+       
+        
         print "***********************************************************************"
 
     def spider_closed(self, spider):
         self.dbobj.disconnect()
-        print "*** closed ***"
         
 
     def process_item(self, item, spider):
@@ -56,17 +60,32 @@ class MySqlPipeline(object):
         tituloItem = item['titItem'][0].replace("\"","\\\"")
         descripItem = item['descItem'][0].replace("\"","\\\"")
         linkItem = item['linkItem'][0].replace("\"","\\\"")
-        print "******************************** process ************************"
         
         
-        print "******************************** insdata ************************"
-        self.dbobj.insData(tituloRss,descripRss,linkRss,tituloItem,descripItem,linkItem)
-        #if len(item['tag'])>0:
-			#self.exporter.export_item(item)
+        
+        if self.ifTIExists(tituloItem) == False:
+			
+			self.dbobj.insData(tituloRss,descripRss,linkRss,tituloItem,descripItem,linkItem)
+        else:
+			print "***************Entrada ya existente!****************"
+       
         return item
 
-    def ifExists(tituloRss):
-		
-		
-		
-		return cond
+    def ifTIExists(self,TR):
+        
+        #print "******************************** getdata ************************"
+        cond = False
+        
+        for p in self.listTitItem:
+			
+
+			if TR == p.replace("\"","\\\""):
+				cond = True
+
+				break
+			else:
+
+				cond = False
+
+        
+        return cond
