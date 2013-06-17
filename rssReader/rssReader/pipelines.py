@@ -49,17 +49,24 @@ class MySqlPipeline(object):
         
 
     def process_item(self, item, spider):
+        
+        tituloRss = item['titChan'][0].replace("\"","\\\"")
+        descripRss = item['descChan'][0].replace("\"","\\\"")
+        linkRss = item['linkChan'][0].replace("\"","\\\"")
+        tituloItem = item['titItem'][0].replace("\"","\\\"")
+        descripItem = item['descItem'][0].replace("\"","\\\"")
+        linkItem = item['linkItem'][0].replace("\"","\\\"")
         print "******************************** process ************************"
-        print(type(item['titChan'][0]))
-        print item['titChan'][0]
-        print(type(item['descChan'][0]))
-        print item['descChan'][0]
-        print(type(item['linkChan'][0]))
-        print item['linkChan'][0]
+        
+        
         print "******************************** insdata ************************"
-        self.dbobj.insData(item['titChan'][0].replace("\"","\\\""),item['descChan'][0].replace("\"","\\\""),item['linkChan'][0].replace("\"","\\\""),item['titItem'][0].replace("\"","\\\""),item['descItem'][0].replace("\"","\\\""),item['linkItem'][0].replace("\"","\\\""))
+        self.dbobj.insData(tituloRss,descripRss,linkRss,tituloItem,descripItem,linkItem)
         #if len(item['tag'])>0:
 			#self.exporter.export_item(item)
         return item
 
-
+    def ifExists(tituloRss):
+		
+		
+		
+		return cond
