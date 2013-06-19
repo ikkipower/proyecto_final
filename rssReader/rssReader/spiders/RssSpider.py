@@ -10,7 +10,7 @@ class RssSpider(BaseSpider):
     start_urls = ["http://www.elperiodico.com/es/rss/rss_portada.xml"]
     
     def __init__(self, name=None, **kwargs):
-        LOG_FILE = "%s_%s.log" % (self.name, datetime.now())
+        LOG_FILE = "../log/%s_%s.log" % (self.name, datetime.now())
         log.log.defaultObserver = log.log.DefaultObserver()
         log.log.defaultObserver.start()
         log.started = False

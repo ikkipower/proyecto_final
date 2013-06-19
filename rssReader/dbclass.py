@@ -25,6 +25,8 @@ import MySQLdb
 
 class Dbclass:
 
+#Common functions
+
       def __init__ (self,dbname,dbuser,dbpasswd):
 		  self.dbname = dbname
 		  self.dbuser = dbuser
@@ -35,7 +37,12 @@ class Dbclass:
          self.mycon = MySQLdb.connect(host='localhost', user='rssuser',passwd='rss', db='RSSdata')
          self.micursor = self.mycon.cursor(MySQLdb.cursors.DictCursor);
          print "Dbclass connected"     
-      
+ 
+      def disconnect(self):
+         self.micursor.close()
+         self.mycon.commit()  
+ 
+#Functions called from Pipeline      
       def insData(self,insTitRss, insDescRss, insLinkRss, insTitItem, insDescItem, insLinkItem):
 											                                                              
          query = "INSERT INTO entrada (TitRss, DescRss, LinkRss, TitItem, DescItem, LinkItem) VALUES (\""+insTitRss+"\",\""+insDescRss+"\",\""+insLinkRss+"\",\""+insTitItem+"\",\""+insDescItem+"\",\""+insLinkItem+"\")" 
@@ -44,30 +51,6 @@ class Dbclass:
          self.micursor.execute(query)
          self.mycon.commit() 
 
-#      def updateData(self,idold,clase,crew,longi,anch,alt):
-         
-#         query = "UPDATE ships SET Clase = \""+clase+"\", Crew ="+str(crew)+", Longi ="+str(longi)+", Anch="+str(anch)+", Alt="+str(alt)+" WHERE id ="+str(idold)+";"
-                 
-#         self.micursor.execute(query)
-#         self.mycon.commit() 
-      
-#      def delData(self,cId,cname):
-         
-#         query = "DELETE FROM ships WHERE Id = "+cId+" AND Clase =\""+cname+"\";"
-#         self.micursor.execute(query)
-#         self.mycon.commit() 
-      
-#      def showData(self, delid,cname):
-        
-#         query= "SELECT * FROM ships WHERE Id = "+delid+" AND Clase =\""+cname+"\";" 
-#         self.micursor.execute(query)   
-#         self.mycon.commit()   
-#         registro = self.micursor.fetchone()
-
-         # Imprimimos el registro resultante
-             
-#         return registro
-         
       def showTituloItem(self):
 
          query= "SELECT TitItem FROM entrada WHERE 1;" 
@@ -79,9 +62,36 @@ class Dbclass:
          for p in registro:
 			 aux.append(p['TitItem'])
          return aux
+
+#functions called from rssReader.py
+
+
+#      def delData(self,cId,cname):
+         
+#         query = "DELETE FROM ships WHERE Id = "+cId+" AND Clase =\""+cname+"\";"
+#         self.micursor.execute(query)
+#         self.mycon.commit() 
       
-      def disconnect(self):
-         self.micursor.close()
-         self.mycon.commit() 
+      def showData(self, delid,ctitname):
+        
+         query= "SELECT * FROM entrada WHERE Id = "+delid+" AND TitItem =\""+ctitname+"\";" 
+         self.micursor.execute(query)   
+         self.mycon.commit()   
+         registro = self.micursor.fetchone()
+        
+         # Imprimimos el registro resultante
+         print registro    
+         return registro
+         
+
+      def listDataClase(self):
+         query= "SELECT Id,TitItem FROM entrada WHERE 1;" 
+         self.micursor.execute(query)
+         self.mycon.commit()      
+         registro = self.micursor.fetchall()      
+         print "listDataClase"
+         return registro
+           
+
 
 

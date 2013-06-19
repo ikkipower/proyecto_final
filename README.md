@@ -6,6 +6,7 @@ Entrega del Proyecto Final del Curso Programación Avanzada en Python, 2ª edici
 Arbol del proyecto
 
 proyecto_final
+---log : contiene los logs creados en el debug del sistema
 ---Mysql : contiene script para generar la base de datos
 ---rssReader : directorio raiz del proyecto scrapy
 -----rssReader
