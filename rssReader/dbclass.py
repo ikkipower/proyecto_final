@@ -43,8 +43,9 @@ class Dbclass:
          self.mycon.commit()  
  
 #Functions called from Pipeline      
-      def insData(self,insTitRss, insDescRss, insLinkRss, insTitItem, insDescItem, insLinkItem):
-											                                                              
+      def insData(self,insTitRss, insLinkRss, insDescRss, insTitItem, insDescItem, insLinkItem):
+									                                                              
+         
          query = "INSERT INTO entrada (TitRss, DescRss, LinkRss, TitItem, DescItem, LinkItem) VALUES (\""+insTitRss+"\",\""+insDescRss+"\",\""+insLinkRss+"\",\""+insTitItem+"\",\""+insDescItem+"\",\""+insLinkItem+"\")" 
                                                                                           
          
@@ -66,21 +67,24 @@ class Dbclass:
 #functions called from rssReader.py
 
 
-#      def delData(self,cId,cname):
-         
-#         query = "DELETE FROM ships WHERE Id = "+cId+" AND Clase =\""+cname+"\";"
-#         self.micursor.execute(query)
-#         self.mycon.commit() 
+      def delData(self, delid,ctitname):
+         print "******************"
+         print delid
+         print ctitname
+         print "------------------"
+         query = "DELETE FROM entrada WHERE Id = "+delid+" AND Clase =\""+ctitname.replace("\"","\\\"")+"\";"
+         self.micursor.execute(query)
+         self.mycon.commit() 
       
       def showData(self, delid,ctitname):
-        
-         query= "SELECT * FROM entrada WHERE Id = "+delid+" AND TitItem =\""+ctitname+"\";" 
+
+         query= "SELECT * FROM entrada WHERE Id = "+delid+" AND TitItem =\""+ctitname.replace("\"","\\\"")+"\";" 
          self.micursor.execute(query)   
          self.mycon.commit()   
          registro = self.micursor.fetchone()
         
          # Imprimimos el registro resultante
-         print registro    
+         #print registro    
          return registro
          
 

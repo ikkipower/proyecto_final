@@ -69,7 +69,9 @@ class RSS_GUI:
       
         
 		self.builder.connect_signals(self.handlers)
+		
 		self.window = self.builder.get_object("rssWindow")
+		print self.window.get_size()
 		self.window.show_all()
 
     def onCombochanged(self,box):
@@ -80,13 +82,13 @@ class RSS_GUI:
 			model = box.get_model()
 			self.delTitRss = model[tree_iter][0]
 			self.delid = model[tree_iter][1]
-			print "^^^^^^^^^^^^^^^^^^"
-			print self.lista
-			print self.delTitRss
-			print self.delid
-			print "^^^^^^^^^^^^^^^^^^"
+
 			for cmp in self.lista:
+				print "+++++++++++++++++"
+				print type(cmp["TitItem"])
+				print cmp["TitItem"]
 				if cmp["TitItem"].decode('unicode-escape').encode('utf-8') == self.delTitRss:
+
 					reg = self.dbobj.showData(str(cmp["Id"]),cmp["TitItem"])
 					print "igual"
 					print cmp
@@ -94,10 +96,15 @@ class RSS_GUI:
 				else:
 				    print "no igual"
 				    print cmp 
+				    
 			
 			
-			
+			print reg
 			self.fillTextbox(reg)
+
+    def onButtonPressed(self,button):
+		   self.dbobj.delData(self.delid,self.delTitRss)
+		   self.status_bar.push(0, "Datos eliminados")
 
     def onDBActivate(self,menuitem):
 
@@ -109,13 +116,29 @@ class RSS_GUI:
 			
 			self.visualizarData()
 		else:
-			print "Eliminar"
+			self.eliminarData()
 	
     def visualizarData(self):
-		self.button1.set_label("Abrir Link del Item")
+		self.clearTextbox()
+		self.viselcomb.set_sensitive(True)
+		self.button1.set_sensitive(False)	
+		self.fillCombobox()
+	
+    def eliminarData(self):
+		self.clearTextbox()
 		self.viselcomb.set_sensitive(True)
 		self.button1.set_sensitive(True)	
-		self.fillCombobox()
+		self.fillCombobox()		
+
+    def clearTextbox(self):
+		self.namRss.get_buffer().set_text("")
+		self.linkRss.set_uri("")
+		self.descRss.get_buffer().set_text("")
+		self.namItem.get_buffer().set_text("")
+		self.linkRss.set_uri("")
+		self.descItem.get_buffer().set_text("")
+
+		
 
     def fillCombobox(self):
         store = Gtk.ListStore(str,str)
@@ -142,18 +165,18 @@ class RSS_GUI:
 			elif cmp == "DescRss":
 				self.descRss.get_buffer().set_text(str(datalist[cmplist[1]]).decode('unicode-escape').encode('utf-8'))
 			elif cmp == "LinkRss": 
-				self.linkRss.get_buffer().set_text(str(datalist[cmplist[2]]).decode('unicode-escape').encode('utf-8'))
+				self.linkRss.set_uri(str(datalist[cmplist[2]]).decode('unicode-escape').encode('utf-8'))
 			elif cmp == "TitItem":
 				self.namItem.get_buffer().set_text(str(datalist[cmplist[3]]).decode('unicode-escape').encode('utf-8'))
  			elif cmp == "DescItem":
 				self.descItem.get_buffer().set_text(str(datalist[cmplist[4]]).decode('unicode-escape').encode('utf-8'))
 			elif cmp == "LinkItem":
-				self.linkItem.get_buffer().set_text(str(datalist[cmplist[5]]).decode('unicode-escape').encode('utf-8'))	
+				self.linkItem.set_uri(str(datalist[cmplist[5]]).decode('unicode-escape').encode('utf-8'))	
 
 
 
     def onDBUpdate(self,menuitem):
-		#print "Update"
+		print "Update"
 		#os.system("./rssReader/scrapy crawl spiRss")
 			     	
 		

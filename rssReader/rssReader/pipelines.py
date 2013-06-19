@@ -60,32 +60,22 @@ class MySqlPipeline(object):
         tituloItem = item['titItem'][0].replace("\"","\\\"")
         descripItem = item['descItem'][0].replace("\"","\\\"")
         linkItem = item['linkItem'][0].replace("\"","\\\"")
-        
-        
-        
+                      
         if self.ifTIExists(tituloItem) == False:
 			
 			self.dbobj.insData(tituloRss,descripRss,linkRss,tituloItem,descripItem,linkItem)
-        else:
-			print "***************Entrada ya existente!****************"
-       
+			     
         return item
 
     def ifTIExists(self,TR):
-        
-        #print "******************************** getdata ************************"
-        cond = False
-        
-        for p in self.listTitItem:
-			
+      
+        cond = False    
+        for p in self.listTitItem:		
 
 			if TR == p.replace("\"","\\\""):
 				cond = True
-
 				break
 			else:
-
 				cond = False
-
         
         return cond
