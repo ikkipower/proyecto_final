@@ -3,7 +3,7 @@
 #
 #       dbclass.py       
 #       
-#  Copyright 2013 Sergio Morlans <https://github.com/ikkipower/CRUD.git>
+#  Copyright 2013 Sergio Morlans <https://github.com/ikkipower/proyecto_final>
 #       
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -33,10 +33,10 @@ class Dbclass:
 		  self.dbpasswd = dbpasswd
 		  
       def connect(self):
-         print "Dbclass created"
+         
          self.mycon = MySQLdb.connect(host='localhost', user='rssuser',passwd='rss', db='RSSdata')
          self.micursor = self.mycon.cursor(MySQLdb.cursors.DictCursor);
-         print "Dbclass connected"     
+              
  
       def disconnect(self):
          self.micursor.close()
@@ -67,18 +67,15 @@ class Dbclass:
 #functions called from rssReader.py
 
 
-      def delData(self, delid,ctitname):
-         print "******************"
-         print delid
-         print ctitname
-         print "------------------"
-         query = "DELETE FROM entrada WHERE Id = "+delid+" AND Clase =\""+ctitname.replace("\"","\\\"")+"\";"
+      def delData(self, delid):
+         
+         query = "DELETE FROM entrada WHERE Id = "+delid+";"
+         print query
          self.micursor.execute(query)
          self.mycon.commit() 
       
-      def showData(self, delid,ctitname):
-
-         query= "SELECT * FROM entrada WHERE Id = "+delid+" AND TitItem =\""+ctitname.replace("\"","\\\"")+"\";" 
+      def showData(self, delid):
+         query= "SELECT * FROM entrada WHERE Id = "+delid+";" 
          self.micursor.execute(query)   
          self.mycon.commit()   
          registro = self.micursor.fetchone()
@@ -93,7 +90,7 @@ class Dbclass:
          self.micursor.execute(query)
          self.mycon.commit()      
          registro = self.micursor.fetchall()      
-         print "listDataClase"
+         
          return registro
            
 

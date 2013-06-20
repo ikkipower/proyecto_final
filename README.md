@@ -6,17 +6,17 @@ Entrega del Proyecto Final del Curso Programación Avanzada en Python, 2ª edici
 Arbol del proyecto
 
 proyecto_final
----log : contiene los logs creados en el debug del sistema
----Mysql : contiene script para generar la base de datos
+--Readme.md
 ---rssReader : directorio raiz del proyecto scrapy
+-----log : contiene los logs creados por el spider
+-----Mysql : contiene script para generar la base de datos
+-----src   : contiene todas las imageness del proyecto
+-----glade : contiene la interfaz gráfica del proyecto
 -----rssReader
 ---------spiders # Directorio donde almacenar los Spiders.
 
 
-1) Abrir el Web Browser desde python
-  "http://docs.python.org/2/library/webbrowser.html"
-   
-2) Scrapy para leer el RSS de ""
+1) Scrapy para leer el RSS de ""
 Pruebas de lectura de ficheros XML del RSS 
 
    "http://www.elperiodico.com/es/rss/rss_portada.xml"
@@ -36,33 +36,24 @@ tenemos 3 elementos obligatorios que son los siguientes:
     descItem = xxs.select("//channel/item/description/text()").extract()
 
 
-3) Generación Base de Datos Mysql (dentro de la carpeta Mysql fichero 
+2) Generación Base de Datos Mysql (dentro de la carpeta Mysql fichero 
 database.sql)
 
 Base de datos que contendrá una tabla donde se guarde por cada entrada
 del feed rss los 3 datos genéricos a todos y los específicos de cada
 entrada.
 
--- Borra la base de datos si existe
-DROP DATABASE IF EXISTS RSSdata;
+4)Pipeline para guardar los datos seleccionados en un base de Datos Myql
+-MySqlPipeline(object) es el pipeline que coge los datos recogidos por 
+el spider y los inserta en la base de datos, siempre y cuando no existan
+previamente en ella.
 
--- Crea la base de datos
-CREATE DATABASE RSSdata;
+5) Ejecución del fichero principal del programa (rssReader.py) que 
+ejecuta la interfaz gráfica (gtk3) generada con glade.
 
--- Usuario para la conexión
-GRANT ALL ON RSSdata.* TO 'rssuser'@'localhost' IDENTIFIED BY 'rss';
-
--- Creación de la tabla
-USE RSSdata;
-CREATE TABLE entrada (id INT NOT NULL AUTO_INCREMENT,
-                      TitRss VARCHAR(200), DescRss VARCHAR(200),
-                      LinkRss VARCHAR(200), TitItem VARCHAR(200), 
-                      DescItem VARCHAR(200), LinkItem VARCHAR(200), 
-                      PRIMARY KEY (id));
-
-4) Pipeline para guardar los datos seleccionados en un base de Datos Myql
-
-
-5) 
-
-Programa ejecutado desde una interface Gráfica Gtk+
+-Siempre que la base de datos no contenga ninguna entrada se ha de ir al
+menú Archivo --> Actualizar base de datos, para insertar las noticias
+del rss del periodico (mediante scrapy).
+-Posteriormente se puede interactuar con los diferentes elementos del 
+menu (es decir, ver/eliminar las entradas y abrir un web browser para 
+leer la noticia completa)
