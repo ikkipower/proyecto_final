@@ -23,7 +23,7 @@
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 
 import os, sys
-
+import re
 from dbclass import Dbclass
 from twisted.internet import reactor
 from scrapy.crawler import Crawler
@@ -73,15 +73,12 @@ class RSS_GUI:
 		self.status_bar.push(0, "Conectado a la base de datos")
 
         #boton inicialmente desactivado
-		self.button1 = self.builder.get_object("Button")
-		self.button1.set_sensitive(False)  
+		self.button1 = self.builder.get_object("eliBtn")
+		self.button1.set_sensitive(False)
 
 		#progress bar
 		self.prog = self.builder.get_object("progbar")
 
-		
-		#boton de cuadro de dialogo de actualizar db
-		self.button1 = self.builder.get_object("btnUp")
 		
 		self.builder.connect_signals(self.handlers)
 		
@@ -125,15 +122,15 @@ class RSS_GUI:
 			self.eliminarData()
 	
     def visualizarData(self):
+		self.opt = "1"
 		self.clearTextbox()
-		self.viselcomb.set_sensitive(True)
-		self.button1.set_sensitive(False)	
+		self.viselcomb.set_sensitive(True)	
 		self.fillCombobox()
 	
     def eliminarData(self):
+		self.opt = "2"
 		self.clearTextbox()
 		self.viselcomb.set_sensitive(True)
-		self.button1.set_sensitive(True)	
 		self.fillCombobox()		
 
     def clearTextbox(self):
@@ -143,6 +140,7 @@ class RSS_GUI:
 		self.namItem.get_buffer().set_text("")
 		self.linkRss.set_uri("")
 		self.descItem.get_buffer().set_text("")
+		#print "clearTextbox self.button1.set_sensitive(False)"
 		self.button1.set_sensitive(False)
 		self.viselcomb.set_sensitive(False)
 
@@ -162,26 +160,30 @@ class RSS_GUI:
         self.viselcomb.add_attribute(cell, 'text', 0)
     
     def fillTextbox(self, datalist):
-		
+		if self.opt == "1":
+			self.button1.set_sensitive(False)	
+		elif self.opt == "2":
+			self.button1.set_sensitive(True)			
 		
 		cmplist = ["TitRss","DescRss","LinkRss","TitItem","DescItem","LinkItem"]                
 		for cmp in datalist:
-			if cmp == "TitRss":
-				self.namRss.get_buffer().set_text(str(datalist[cmplist[0]]).decode('unicode-escape').encode('utf-8'))
+			if cmp == "TitRss":				
+				self.namRss.get_buffer().set_text(self.filtrarhtml(str(datalist[cmplist[0]]).decode('unicode-escape').encode('utf-8')))
 			elif cmp == "DescRss":
-				self.descRss.get_buffer().set_text(str(datalist[cmplist[1]]).decode('unicode-escape').encode('utf-8'))
+				self.descRss.get_buffer().set_text(self.filtrarhtml(str(datalist[cmplist[1]]).decode('unicode-escape').encode('utf-8')))
 			elif cmp == "LinkRss": 
 				self.linkRss.set_uri(str(datalist[cmplist[2]]).decode('unicode-escape').encode('utf-8'))
 			elif cmp == "TitItem":
-				self.namItem.get_buffer().set_text(str(datalist[cmplist[3]]).decode('unicode-escape').encode('utf-8'))
+				self.namItem.get_buffer().set_text(self.filtrarhtml(str(datalist[cmplist[3]]).decode('unicode-escape').encode('utf-8')))
  			elif cmp == "DescItem":
-				self.descItem.get_buffer().set_text(str(datalist[cmplist[4]]).decode('unicode-escape').encode('utf-8'))
+				self.descItem.get_buffer().set_text(self.filtrarhtml(str(datalist[cmplist[4]]).decode('unicode-escape').encode('utf-8')))
 			elif cmp == "LinkItem":
 				self.linkItem.set_uri(str(datalist[cmplist[5]]).decode('unicode-escape').encode('utf-8'))	
 
 
     def onDBUpdate(self,menuitem):
-		self.button1.set_sensitive(True)  
+		#print "onDBUpdate self.button1.set_sensitive(True)"
+		self.button1.set_sensitive(False)  
 		self.upd = self.builder.get_object("UpdateDialog")
 		self.upd.show_all()
 		
@@ -190,14 +192,17 @@ class RSS_GUI:
 		self.upd.hide()  
 		
     def onbtnUpClicked(self,button):
-        spider = RssSpider(domain='elperiodico.com')
-        crawler = Crawler(get_project_settings())
-        crawler.configure()
-        crawler.crawl(spider)
-        crawler.signals.connect(self.stop_reactor,signals.engine_stopped)
-        crawler.start()
-
-        reactor.run()
+        #spider = RssSpider(domain='elperiodico.com')
+        #crawler = Crawler(get_project_settings())
+        #crawler.configure()
+        
+        #crawler.crawl(spider)
+        #crawler.signals.connect(self.stop_reactor,signals.engine_stopped)
+        #crawler.start()
+        
+        #reactor.run()
+        os.system("scrapy crawl spiRss")
+			
         self.status_bar.push(0, "Base De Datos Actualizada")
         self.upd = self.builder.get_object("UpdateDialog")
         self.upd.hide()          		
@@ -214,9 +219,24 @@ class RSS_GUI:
 		self.dbobj.disconnect()
 		Gtk.main_quit()
 
-    def stop_reactor(self):
-        reactor.stop() #Stops reactor to prevent script from hanging
-        
+    #def stop_reactor(self):
+ 
+        #print "jojo" #reactor.stop() #Stops reactor to prevent script from hanging
+  
+    def filtrarhtml(self,string):
+        sr = re.search('<.*>', string)
+        if sr == None:
+			return string
+        if ((len(string)-1)==sr.end):  #tag acaba con el string
+			if sr.start()==0:  #tag es todo el string
+				return ""
+			else:
+				return string[:sr.start()]  #texto delante
+        else:
+			if sr.start()==0:  #tag empiza string	
+				return string[sr.end():]
+			else:			
+				return string[:sr.start()]+string[sr.end():]  #texto delante      
 
 def main():
     app = RSS_GUI()

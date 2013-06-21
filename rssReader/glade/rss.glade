@@ -704,7 +704,7 @@ MA 02110-1301, USA.</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="Button">
+              <object class="GtkButton" id="eliBtn">
                 <property name="label" translatable="yes">Eliminar</property>
                 <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>

@@ -26,7 +26,6 @@ class RssSpider(BaseSpider):
         items = []
         
         it = cinfo.select("title/text()").extract()[0].encode('latin-1')
-        print len(it)
         if len(it) == 0:
 			tituloRss = [""]
         else:
