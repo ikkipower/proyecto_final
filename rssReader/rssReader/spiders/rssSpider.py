@@ -11,7 +11,7 @@ class RssSpider(BaseSpider):
     allowed_domains = ['elperiodico.com']
     
     def __init__(self, name=None, **kwargs):
-        LOG_FILE = "log/%s_%s.log" % (self.name, datetime.now())
+        LOG_FILE = "./log/%s_%s.log" % (self.name, datetime.now())
         log.log.defaultObserver = log.log.DefaultObserver()
         log.log.defaultObserver.start()
         log.started = False
